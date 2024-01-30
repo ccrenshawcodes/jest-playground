@@ -8,6 +8,8 @@ function reverse (str) {
     return str.split('').reverse().join('');
 }
 
+
+
 function add(a, b) {
     return a + b;
 }
@@ -22,21 +24,6 @@ function times(a, b) {
 
 function divide(a, b) {
     return a / b;
-}
-
-function caesar(str, num) {
-    let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    let indices = [];
-    for (let i = 0; i < str.length; i++) {
-        indices.push(alphabet.indexOf(str[i]));
-    }
-    const newIndices = indices.map((element) => element + num);
-    const newStr = [];
-    newIndices.forEach((element) => {
-        newStr.push(alphabet[element]);
-    })
-    return newStr.join('');
-
 }
 
 function caesarCipher (str, vector) {
@@ -67,10 +54,6 @@ function caesarCipher (str, vector) {
         }
     }
     return strArr.join('');
-}
-
-function arrayAverage (arr) {
-
 }
 
 function analyzeArray (arr) {
